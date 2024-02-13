@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 384px;
+  max-width: 384px;
   color: var(--neutral-black);
   box-shadow: 8px 8px var(--neutral-black);
   transition: box-shadow 0.1s ease-in-out;
@@ -56,6 +56,7 @@ body {
 
 .card .card__image-wrapper img {
   height: 100%;
+  width: 100%;
   object-fit: none;
 }
 
@@ -113,4 +114,25 @@ body {
 .card .card__author-name {
   font-weight: 800;
   font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
+  .card {
+    max-width: 327px;
+  }
+  .card .card__post-label {
+    font-size: 12px;
+  }
+  .card .card__publish-date {
+    font-size: 12px;
+  }
+  .card .card__title {
+    font-size: 20px;
+  }
+  .card .card__short-description {
+    font-size: 14px;
+  }
 }
