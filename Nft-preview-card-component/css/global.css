@@ -18,6 +18,18 @@ body {
   padding: 1rem;
 }
 
+.container .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .card {
   max-width: 20.4375rem;
   background-color: var(--very-dark-blue-card);
