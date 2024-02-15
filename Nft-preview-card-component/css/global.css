@@ -155,6 +155,7 @@ body {
 
 @media screen and (min-width: 31.25rem) {
   .card {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
     max-width: 21.875rem;
   }
   .card__image-wrapper {
