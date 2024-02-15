@@ -37,35 +37,50 @@
     <main class="container">
       <article class="card">
         <div class="card__image-wrapper">
-          '
           <img
             src="./images/image-equilibrium.jpg"
             alt="" />
+          <div class="card__image-wrapper--active">
+            <img src="./images/icon-view.svg" />
+          </div>
         </div>
 
-        <hgroup>
-          <h2>Equilibrium #3429</h2>
-          <p>Our Equilibrium collection promotes balance and calm.</p>
+        <hgroup class="card__headings">
+          <h2 class="card__main-header">Equilibrium #3429</h2>
+          <p class="card__subheader">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
         </hgroup>
 
         <div class="card__details">
-          <div class="card__price-wrapper">
-            <div class="card__price-icon-wrapper"></div>
-            <div class="card__price">0.041 ETH</div>
+          <div class="card__value-wrapper">
+            <div class="card__value-icon-wrapper">
+              <img
+                src="./images/icon-ethereum.svg"
+                alt="Eth" />
+            </div>
+            <span class="card__value">0.041 ETH</span>
           </div>
-          <div class="card__left-time-wrapper">
-            <div class="card__left-time-icon-wrapper"></div>
-            <div class="card__left-time">3 days left</div>
+          <div class="card__time-left-wrapper">
+            <div class="card__time-left-icon-wrapper">
+              <img
+                src="./images/icon-clock.svg"
+                alt="time" />
+            </div>
+            <div class="card__time-left">3 days left</div>
           </div>
         </div>
 
+        <div class="card__separator"></div>
+
         <footer>
-          <figure>
+          <figure class="card__author-details">
             <img
               src="./images/image-avatar.png"
               alt="Headshot of Jules Wyvern" />
-            <figcaption class="blog-post__author-name">
-              Creation of Jules Wyvern
+
+            <figcaption class="card__author-name">
+              Creation of <span>Jules Wyvern</span>
             </figcaption>
           </figure>
         </footer>
