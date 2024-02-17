@@ -27,6 +27,17 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.container .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 .card {
   max-width: 20rem;
@@ -67,7 +78,7 @@ body {
   font-weight: 400;
   font-size: 0.938rem;
   color: var(--grayish-blue);
-  max-width: 17rem;
+  max-width: 16rem;
   letter-spacing: 0.012rem;
   line-height: 1.188rem;
 }
