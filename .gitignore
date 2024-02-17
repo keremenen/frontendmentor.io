@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#projects
+/Blog-preview-card
+/Nft-preview-card-component
+/Social-links-profile
+
