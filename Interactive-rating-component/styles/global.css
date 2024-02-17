@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box--izing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,4 +13,10 @@
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
