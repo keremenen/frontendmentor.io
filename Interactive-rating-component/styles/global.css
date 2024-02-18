@@ -1,11 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
@@ -19,4 +11,79 @@ body {
   font-family: 'Overpass', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: var(--very-dark-blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.rating {
+  max-width: 20.438rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 15px;
+  background: linear-gradient(
+    120deg,
+    hsl(215, 20%, 17%) 0%,
+    hsl(215, 24%, 12%) 100%
+  );
+}
+
+.rating__icon-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating__heading {
+  margin-top: 1.563rem;
+}
+
+.rating__heading h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.rating__heading p {
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: var(--light-grey);
+}
+
+.rating__controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.rating__input {
+  height: 2.625rem;
+  width: 2.625rem;
+  border-radius: 21px;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--medium-grey);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.rating__button-submit {
+  margin-top: 1.5rem;
+  background-color: var(--orange);
+  height: 2.813rem;
+  width: 100%;
+  border: none;
+  border-radius: 22.5px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.117rem;
+  color: var(--white);
 }
