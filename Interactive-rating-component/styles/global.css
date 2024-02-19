@@ -124,7 +124,7 @@ body {
   width: 100%;
 }
 
-.acknowledgments__selected-rating {
+.acknowledgments__rating {
   font-size: 0.875rem;
   color: var(--orange);
   background-color: var(--dark-blue);
