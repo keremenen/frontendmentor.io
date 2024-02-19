@@ -14,6 +14,10 @@ const handleSubmit = () => {
 
 inputs.forEach((input) => {
   input.addEventListener('click', () => {
+    //Remove active class from every input
+    inputs.forEach((input) => input.classList.remove('active'))
+
+    //Setting the html tag to the selected value
     selectedRating = input.value
     input.classList.toggle('active')
   })
