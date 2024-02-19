@@ -1,8 +1,13 @@
 'use strict'
+// State
 let selectedRating = null
+
+// DOM elements
 const inputs = document.querySelectorAll('.rating__input')
 const submitButton = document.querySelector('.rating__submit-button')
 const ratingSpan = document.querySelector('.acknowledgments__selected-rating')
+const ratingContainer = document.querySelector('.rating')
+const acknowledgmentsContainer = document.querySelector('.acknowledgments')
 
 const handleSubmit = () => {
   if (selectedRating === null) {
@@ -10,6 +15,10 @@ const handleSubmit = () => {
     return
   }
   ratingSpan.innerHTML = selectedRating
+
+  // Display acknowledgments container instead of rating container
+  acknowledgmentsContainer.style.display = 'flex'
+  ratingContainer.style.display = 'none'
 }
 
 inputs.forEach((input) => {

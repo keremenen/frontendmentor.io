@@ -108,6 +108,9 @@ body {
 /*  */
 
 .acknowledgments {
+  display: none;
+  flex-direction: column;
+  align-items: center;
   max-width: 20.438rem;
   padding: 2.125rem 1.5rem 2.313rem 1.5rem;
   border-radius: 15px;
@@ -116,9 +119,6 @@ body {
     hsl(215, 20%, 17%) 0%,
     hsl(215, 24%, 12%) 100%
   );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .acknowledgments__image-wrapper {
