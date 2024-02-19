@@ -81,7 +81,7 @@ body {
   color: var(--white);
 }
 
-.rating__button-submit {
+.rating__submit-button {
   margin-top: 1.5rem;
   background-color: var(--orange);
   height: 2.813rem;
@@ -95,7 +95,7 @@ body {
   color: var(--white);
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
-.rating__button-submit:hover {
+.rating__submit-button:hover {
   color: var(--orange);
   background-color: var(--white);
 }
