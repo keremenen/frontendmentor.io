@@ -20,37 +20,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/bg-desktop.svg');
-  background-size: cover;
+  background-image: url('../images/bg-mobile.svg');
+  background-size: auto 100%;
 }
 
 @media screen and (min-width: 48rem) {
   body {
-    background-image: url('../images/bg-mobile.svg');
+    background-image: url('../images/bg-desktop.svg');
   }
 }
 
 /* HEADER */
 
-.header {
+.navbar {
   padding: 2rem 2.063rem;
   width: 100%;
 }
 
-.header__logo-wrapper {
+.navbar__logo-wrapper {
   max-width: 8.125rem;
 }
 
-.header__logo-wrapper img {
+.navbar__logo-wrapper img {
   width: 100%;
 }
 
 @media screen and (min-width: 48rem) {
-  .header {
+  .navbar {
     padding: 3.438rem 4.688rem 1rem 4.688rem;
     max-width: 90rem;
   }
-  .header__logo-wrapper {
+  .navbar__logo-wrapper {
     max-width: 12.5rem;
   }
 }
