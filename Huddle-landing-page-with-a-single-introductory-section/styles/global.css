@@ -110,8 +110,15 @@ body {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   font-size: 0.75rem;
   margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out,
+    box-shadow 150ms ease-in-out;
 }
-
+.hero__register-button:hover {
+  background-color: var(--soft-magenta);
+  box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.199);
+  color: var(--white);
+}
 @media screen and (min-width: 48rem) {
   .container {
     max-width: 90rem;
