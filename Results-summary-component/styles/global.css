@@ -48,7 +48,8 @@ body {
 
 .result {
   max-width: 375px;
-  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .result__score {
