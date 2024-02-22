@@ -194,6 +194,8 @@ body {
     min-height: 32rem;
     /* align-items: ce; */
     /* padding: 2.375rem 0 2.875rem 0; */
+    box-shadow: 0 30px 60px hsla(224, 82%, 58%, 15%);
+    border-radius: 2rem;
   }
   .result__score {
     width: 50%;
