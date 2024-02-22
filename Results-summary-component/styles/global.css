@@ -41,7 +41,7 @@
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   display: flex;
-  align-items: center;
+
   justify-content: center;
   min-height: 100vh;
 }
@@ -58,11 +58,12 @@ body {
     var(--light-slate-blue) 0%,
     var(--light-royal-blue) 100%
   );
-  padding: 24px 0 40px 0;
+  padding: 24px 0 38px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0 0 32px 32px;
+  justify-content: center;
 }
 
 .result__title--score {
@@ -84,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-top: 24px;
+  margin-top: 26px;
 }
 .result__points-wrapper h1 {
   color: var(--white);
@@ -100,7 +101,7 @@ body {
 .result__subtitle {
   color: var(--white);
   font-size: 24px;
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .result__message {
@@ -108,10 +109,11 @@ body {
   color: var(--light-lavender);
   padding: 0 57px;
   margin-top: 8px;
+  font-weight: 500;
 }
 
 .result__summary {
-  padding: 24px 30px 30px 30px;
+  padding: 27px 30px 30px 31px;
 }
 
 .result__title--summary {
@@ -174,4 +176,63 @@ body {
   border-radius: 28px;
   border: none;
   margin-top: 24px;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    align-items: center;
+  }
+  .result {
+    flex-direction: row;
+    max-width: 736px;
+    min-height: 512px;
+    /* align-items: ce; */
+    /* padding: 38px 0 46px 0; */
+  }
+  .result__score {
+    width: 50%;
+    border-radius: 32px;
+    padding: 42px 0 46px 0;
+  }
+  .result__title--score {
+    font-size: 24px;
+  }
+  .result__points-wrapper {
+    height: 200px;
+    width: 200px;
+    margin-top: 36px;
+  }
+  .result__points-wrapper h1 {
+    font-weight: 800;
+    font-size: 72px;
+  }
+  .result__points-wrapper h4 {
+    font-size: 18px;
+  }
+  .result__subtitle {
+    font-size: 32px;
+    margin-top: 28px;
+  }
+  .result__summary {
+    width: 50%;
+  }
+  .result__message {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .result__summary {
+    padding: 40px 40px 30px 40px;
+  }
+
+  .result__title--summary {
+    font-size: 24px;
+  }
+  .result__categories-wrapper {
+    font-size: 18px;
+    margin-top: 32px;
+    font-weight: 700;
+  }
+  .result__button {
+    margin-top: 40px;
+  }
 }
