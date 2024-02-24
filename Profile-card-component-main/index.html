@@ -32,14 +32,42 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-    <div class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <article class="profile-card">
+        <div class="profile-card__background-wrapper">
+          <img
+            src="./images/bg-pattern-card.svg"
+            alt="Green dots" />
+        </div>
+        <figure class="profile-card__user-image">
+          <img
+            src="./images/image-victor.jpg"
+            alt="Headshot of Victor" />
+        </figure>
+        <header class="profile-card__header">
+          <h1>Victor Crest<span>26</span></h1>
+          <h2>London</h2>
+        </header>
+        <hr />
+        <div class="profile-card__statistics">
+          <div class="profile-card__single-counter">
+            <h3>80K</h3>
+            <p>Followers</p>
+          </div>
+        </div>
+        <div class="profile-card__statistics">
+          <div class="profile-card__single-counter">
+            <h3>803K</h3>
+            <p>Likes</p>
+          </div>
+        </div>
+        <div class="profile-card__statistics">
+          <div class="profile-card__single-counter">
+            <h3>1.4K</h3>
+            <p>Photos</p>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
