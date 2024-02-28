@@ -1,0 +1,12 @@
+@import url(./reset.css);
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%); /* Main background */
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /* Card background */
+  --soft-violet: hsl(277, 64%, 61%) /* Accent */
+
+  --white: hsl(0, 0%, 100%); /* Main heading, stats */
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* Main paragraph */
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* Stat headings */
+}
+
