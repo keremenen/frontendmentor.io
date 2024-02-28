@@ -34,7 +34,9 @@
       <article class="stats-card">
         <aside class="stats-card__aside">
           <header class="stats-card__header">
-            <h1>Get <mark>insights</mark> that help your business grow.</h1>
+            <h1>
+              Get <mark>insights</mark> that help your business <br />grow.
+            </h1>
             <p>
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
@@ -55,11 +57,16 @@
             </div>
           </div>
         </aside>
-        <figure class="stats-card__image-wrapper">
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt="Three talking women in the office with a purple photo filter" />
-        </figure>
+        <div class="stats-card__image-wrapper">
+          <picture>
+            <source
+              srcset="./images/image-header-desktop.jpg"
+              media="(min-width: 48rem)" />
+            <img
+              src="./images/image-header-mobile.jpg"
+              alt="Three talking women in the office with a purple photo filter" />
+          </picture>
+        </div>
       </article>
     </main>
   </body>
