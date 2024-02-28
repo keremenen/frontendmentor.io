@@ -30,17 +30,37 @@
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
-
-    <div class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <article class="stats-card">
+        <aside class="stats-card__aside">
+          <header class="stats-card__header">
+            <h1>Get <mark>insights</mark> that help your business grow.</h1>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </header>
+          <div class="stats-card__statistics">
+            <div class="stats-card__single_statistic">
+              <h2>10k+</h2>
+              <h3>Companies</h3>
+            </div>
+            <div class="stats-card__single_statistic">
+              <h2>314</h2>
+              <h3>Templates</h3>
+            </div>
+            <div class="stats-card__single_statistic">
+              <h2>12M+</h2>
+              <h3>Queries</h3>
+            </div>
+          </div>
+        </aside>
+        <figure class="stats-card__image-wrapper">
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="Three talking women in the office with a purple photo filter" />
+        </figure>
+      </article>
+    </main>
   </body>
 </html>
