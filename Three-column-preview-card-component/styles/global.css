@@ -11,7 +11,6 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
-  padding: 1rem;
   background-color: var(--very-light-gray);
   font-optical-sizing: auto;
   font-style: normal;
@@ -19,18 +18,32 @@ body {
 
 main {
   display: flex;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .vehicle-cards {
   max-width: 20.4375rem;
   display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
   flex-direction: column;
 }
 
 .vehicle-card {
+  flex-basis: 33.33%;
   padding: 3rem 3.0625rem;
 }
 
@@ -79,4 +92,21 @@ main {
   margin-top: 1.4375rem;
   font-size: 0.9375rem;
   border: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .vehicle-cards {
+    flex-direction: row;
+    max-width: 57.5rem;
+  }
+  .vehicle-card {
+    padding: 3rem 2.9375rem;
+  }
+  .vehicle-card__header > h2 {
+    margin-top: 2.375rem;
+  }
+
+  .vehicle-card__button {
+    margin-top: 5.1875rem;
+  }
 }
