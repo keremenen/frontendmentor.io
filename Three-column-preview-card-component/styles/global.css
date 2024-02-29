@@ -24,7 +24,7 @@ main {
   min-height: 100vh;
 }
 
-.vehicle-cars {
+.vehicle-cards {
   max-width: 20.4375rem;
   display: flex;
   flex-direction: column;
