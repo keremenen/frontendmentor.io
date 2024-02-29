@@ -71,7 +71,7 @@ main {
   margin-top: 2.1875rem;
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
-  color: var(--transparent-white);
+  color: var(--white);
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -92,6 +92,14 @@ main {
   margin-top: 1.4375rem;
   font-size: 0.9375rem;
   border: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 100ms ease-in-out;
+}
+.vehicle-card__button:hover {
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
 }
 
 @media screen and (min-width: 48rem) {
