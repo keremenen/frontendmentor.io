@@ -1,9 +1,82 @@
 @import url(./reset.css);
 
 :root {
-  --bright-orange: hsl(31, 77%, 52%);
+  --bright-orange: hsl(31, 76%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-gray: hsl(0, 0%, 95%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 1rem;
+  background-color: var(--very-light-gray);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.vehicle-cars {
+  max-width: 20.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-card {
+  padding: 3rem 3.0625rem;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.sedans > .vehicle-card__button {
+  color: var(--bright-orange);
+}
+.suvs > .vehicle-card__button {
+  color: var(--dark-cyan);
+}
+.luxury > .vehicle-card__button {
+  color: var(--very-dark-cyan);
+}
+
+.vehicle-card__header > h2 {
+  margin-top: 2.1875rem;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  color: var(--transparent-white);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.vehicle-card__description {
+  font-size: 0.9375rem;
+  color: var(--white);
+  line-height: 1.5625rem;
+  font-weight: 250;
+  margin-top: 1.75rem;
+  letter-spacing: 0.025rem;
+}
+
+.vehicle-card__button {
+  padding: 0.8125rem 2rem;
+  background-color: var(--very-light-gray);
+  border-radius: 10rem;
+  margin-top: 1.4375rem;
+  font-size: 0.9375rem;
+  border: none;
 }
