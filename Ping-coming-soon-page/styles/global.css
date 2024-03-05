@@ -2,8 +2,140 @@
 
 :root {
   --blue: hsl(223, 87%, 63%);
+  --blue-lighter: hsla(223, 87%, 63%, 15%);
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
   --very-dark-blue: hsl(209, 33%, 12%);
+  --white: hsl(0, 0%, 100%);
+
+  --mobile-width: 23.438rem;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Libre Franklin', sans-serif;
+  position: relative;
+}
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--mobile-width);
+  margin: 0 auto;
+}
+.logo-wrapper {
+  margin: 80px 0 20px;
+  max-width: 54px;
+}
+.logo-wrapper img {
+  width: 100%;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  max-width: var(--mobile-width);
+  margin: auto;
+  padding: 0 27px 130px 27px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 8px;
+}
+
+.hero-section__title {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--gray);
+  margin: 10px 0;
+}
+.hero-section__title span {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.hero-section__subtitle {
+  margin: 9px 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 11px;
+}
+
+.subscription-form__input {
+  height: 40px;
+  border-radius: 28px;
+  border: 1px solid var(--pale-blue);
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 32px;
+  margin-bottom: 5px;
+}
+.subscription-form__input::placeholder {
+  font-weight: 300;
+  color: var(--pale-blue);
+}
+.subscription-form__button {
+  margin-top: 5px;
+  background-color: var(--blue);
+  border: none;
+  height: 40px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.main-image-wrapper {
+  padding: 34px 0;
+}
+
+/* FOOTER */
+
+.site-footer {
+  max-width: var(--mobile-width);
+  margin: 0 auto;
+  padding: 32px 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+}
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 13px;
+}
+.social-links li {
+  width: 32px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  border: 1px solid var(--blue-lighter);
+  border-radius: 50%;
+}
+
+.copyrights {
+  color: var(--gray);
+  padding-top: 13px;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
 }
