@@ -3,6 +3,7 @@
 :root {
   --blue: hsl(223, 87%, 63%);
   --blue-lighter: hsla(223, 87%, 63%, 15%);
+  --lavender: hsl(223, 87%, 70%);
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
@@ -81,10 +82,14 @@ body {
   height: 2.5rem;
   border-radius: 1.75rem;
   border: 0.0625rem solid var(--pale-blue);
-
   line-height: 1.25rem;
   padding-left: 2rem;
   margin-bottom: 0.3125rem;
+  transition: border 150ms ease-out;
+}
+.subscription-form__input:focus {
+  outline: none;
+  border: 0.0625rem solid var(--lavender);
 }
 .subscription-form__input::placeholder {
   font-weight: 300;
@@ -96,9 +101,14 @@ body {
   border: none;
   height: 2.5rem;
   border-radius: 1.5rem;
-
   font-weight: 500;
   color: var(--white);
+  cursor: pointer;
+  transition: background-color 150ms ease-out;
+}
+.subscription-form__button:hover,
+.subscription-form__button:focus {
+  background-color: var(--lavender);
 }
 
 .main-image-wrapper {
