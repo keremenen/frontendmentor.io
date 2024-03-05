@@ -70,7 +70,7 @@ body {
   color: var(--very-dark-blue);
 }
 
-.subscription-form {
+#subscription-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -198,7 +198,7 @@ body {
   .hero-section__subtitle {
     font-size: 1.25rem;
   }
-  .subscription-form {
+  #subscription-form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -221,6 +221,9 @@ body {
     position: absolute;
     left: 32px;
     bottom: -8px;
+    font-size: 12px;
+  }
+  .copyrights {
     font-size: 12px;
   }
 }
