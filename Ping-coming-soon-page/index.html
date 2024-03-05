@@ -29,6 +29,42 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    Hello world
+    <header class="site-header">
+      <figure class="header__logo-wrapper">
+        <img
+          src="./images/logo.svg"
+          class="header__logo"
+          alt="PING company logo with blue dot" />
+      </figure>
+    </header>
+
+    <main class="container">
+      <section class="hero-section">
+        <h1 class="hero-section__title">We are launching <span>soon!</span></h1>
+        <h2 class="hero-section__subtitle">Subscribe and get notified</h2>
+
+        <form class="subscription-form">
+          <input
+            class="subscription-form__input"
+            type="text"
+            placeholder="Your email address..." />
+          <button class="subscription-form__button">Notify Me</button>
+        </form>
+      </section>
+      <figure class="main-image-wrapper">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="Dashboard illustration" />
+      </figure>
+    </main>
+
+    <footer class="site-footer">
+      <ul class="social-links">
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+      <p class="copyrights">© Copyright Ping. All rights reserved.</p>
+    </footer>
   </body>
 </html>
