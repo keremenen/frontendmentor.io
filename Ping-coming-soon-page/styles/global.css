@@ -105,6 +105,7 @@ body {
   color: var(--white);
   cursor: pointer;
   transition: background-color 150ms ease-out;
+  box-shadow: 0 5px 10px 2px var(--blue-lighter);
 }
 .subscription-form__button:hover,
 .subscription-form__button:focus {
