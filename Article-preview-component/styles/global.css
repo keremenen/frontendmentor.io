@@ -18,6 +18,8 @@ body {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 0 1rem;
 }
 
@@ -47,9 +49,6 @@ main {
 
 .article__details {
   padding: 36px 32px 20px 32px;
-}
-.active .article__details {
-  padding: 36px 32px 12px 32px;
 }
 
 .article__details {
@@ -116,11 +115,11 @@ main {
   background-color: var(--very-Dark-Grayish-Blue);
   width: 100%;
   position: absolute;
-  height: 64px;
+  height: 79px;
   border-radius: 0 0 10px 10px;
   padding: 0px 32px;
   left: 0;
-  bottom: -64px;
+  bottom: -79px;
   align-items: center;
   display: flex;
   transition: bottom 150ms ease-out;
