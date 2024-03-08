@@ -1,8 +1,8 @@
 const button = document.querySelector('.article__share-button')
 
 const handleShareButtonClick = () => {
-  const footer = document.querySelector('.article')
-  footer.classList.toggle('active')
+  const article = document.querySelector('.article')
+  article.classList.toggle('active')
 }
 
 button.addEventListener('click', handleShareButtonClick, false)
