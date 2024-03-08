@@ -5,7 +5,7 @@
   --desaturated-Dark-Blue: hsl(214, 17%, 51%);
   --grayish-Blue: hsl(212, 23%, 69%);
   --light-Grayish-Blue: hsl(210, 46%, 95%);
-  --shadow: hlsa(210, 29%, 84%, 50%);
+  --shadow: hsla(210, 29%, 84%, 0.5);
   --white: #ffffff;
 }
 
