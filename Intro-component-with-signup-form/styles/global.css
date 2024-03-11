@@ -1,20 +1,120 @@
 @import url(./reset.css);
 
 :root {
-/* Primary */
---red: hsl(0, 100%, 74%) 
---green: hsl(154, 59%, 51%)
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --white: hsl(0, 0%, 100%);
 
-/* Accent */
---blue: hsl(248, 32%, 49%)
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
 
-/* Neutral */
---dark-blue: hsl(249, 10%, 26%) 
---grayish-blue: hsl(246, 25%, 77%)
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: var(--red);
+  background-image: url('../images/bg-intro-mobile.png');
+}
+
+main {
+  padding: 0 24px;
+}
+.intro {
+  padding-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+}
+.intro__headers {
+  color: var(--white);
+  display: grid;
+  gap: 22px;
+}
+
+.intro__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+  text-align: center;
+}
+
+.intro__subtitle {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 26px;
+  white-space: normal;
+  text-align: center;
+}
+
+.intro__promotion-header {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 18px 66px;
+  color: white;
+  background-color: var(--blue);
+  line-height: 26px;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 0.27px;
+  box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 14%);
+  margin-bottom: 24px;
+}
+.intro-form {
+  margin-top: 24px;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.intro-form__single-input {
+  height: 56px;
+  font-weight: 600;
+  color: var(--dark-blue);
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+  padding-left: 18px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 87%);
+}
+.intro-form__single-input:focus {
+  outline-color: var(--blue);
+}
+.intro-form__submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 0 hsla(0, 0%, 0%, 10%);
+  color: var(--white);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.intro-form__terms {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: -8px;
+  padding: 0 16px;
+}
+.intro-form__terms a {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
 }
