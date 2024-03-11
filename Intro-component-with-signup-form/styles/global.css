@@ -104,6 +104,11 @@ main {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 500;
+  cursor: pointer;
+  transition: background-color 100ms ease-out;
+}
+.intro-form__submit-button:hover {
+  background-color: hsl(154, 65%, 68%);
 }
 .intro-form__terms {
   text-align: center;
