@@ -21,7 +21,9 @@ function validateEmail(email) {
 }
 
 const handleEmailValidation = (formInput) => {
+  formInput.classList.remove('error')
   if (!validateEmail(formInput.value)) {
+    formInput.classList.add('error')
     displayError(
       formInput.closest('.intro__form-single-wrapper'),
       'Looks like this is not an email'

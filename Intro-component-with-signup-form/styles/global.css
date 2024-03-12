@@ -88,13 +88,19 @@ main {
   border-radius: 0.3125rem;
   border: 1px solid hsl(0, 0%, 87%);
   width: 100%;
+  position: relative;
 }
 .intro__form-single-input:focus {
   outline-color: var(--blue);
 }
 .intro__form-single-input.error {
-  border: 1px solid var(--red);
+  border: 2px solid var(--red);
+  color: var(--red);
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
+
 .input__form-error-message {
   color: var(--red);
   font-weight: 500;
