@@ -57,7 +57,7 @@ main {
 .intro__promotion-header {
   font-size: 15px;
   font-weight: 400;
-  padding: 18px 0;
+  padding: 18px 40px;
   color: white;
   background-color: var(--blue);
   line-height: 26px;
@@ -67,7 +67,7 @@ main {
   box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 14%);
   margin-bottom: 24px;
 }
-.intro__form {
+#intro__form {
   margin-top: 24px;
   padding: 24px;
   background-color: var(--white);
@@ -87,9 +87,20 @@ main {
   padding-left: 18px;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 87%);
+  width: 100%;
 }
 .intro__form-single-input:focus {
   outline-color: var(--blue);
+}
+.intro__form-single-input.error {
+  border: 2px solid var(--red);
+}
+.input__form-error-message {
+  color: var(--red);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 11px;
+  text-align: right;
 }
 .intro__form-submit-button {
   display: flex;
@@ -160,7 +171,7 @@ main {
     padding: 17px 0;
     letter-spacing: 0.1px;
   }
-  .intro__form {
+  #intro__form {
     padding: 40px;
     gap: 20px;
   }
