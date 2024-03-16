@@ -9,4 +9,78 @@
   --very-Dark-Blue: #4c4e61;
   --grayish-Blue: #a3a5ae;
   --very-Light-Gray: #fafafa;
+  --white: #fff;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--very-Light-Gray);
+}
+.services {
+  padding: 5.625rem 2rem 4.875rem 2rem;
+}
+.services__header {
+  text-align: center;
+  color: var(--very-Dark-Blue);
+}
+.services__title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.0107rem;
+}
+.services__subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.6875rem;
+  letter-spacing: 0.0107rem;
+}
+.services__description {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.0063rem;
+  line-height: 1.5625rem;
+  margin-top: 1.0625rem;
+}
+.services-cards {
+  list-style: none;
+  display: grid;
+  margin-top: 4.6875rem;
+  gap: 1.5625rem;
+}
+.service-card {
+  border-top: 0.25rem solid;
+  border-radius: 0.5rem;
+  padding: 1.75rem 1.8125rem 1.625rem 1.8125rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 50%);
+}
+.service-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--very-Dark-Blue);
+}
+.service-card__description {
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.0056rem;
+  margin-top: 0.3125rem;
+}
+.service-card__image {
+  max-width: 3.5625rem;
+  max-height: 3.5625rem;
+  align-self: flex-end;
+  margin-top: 2.0625rem;
+}
+.service-card:where([data-type='supervisor']) {
+  border-color: var(--cyan);
+}
+.service-card:where([data-type='team-builder']) {
+  border-color: var(--red);
+}
+.service-card:where([data-type='karma']) {
+  border-color: var(--orange);
+}
+.service-card:where([data-type='calculator']) {
+  border-color: var(--blue);
 }
