@@ -15,8 +15,13 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--very-Light-Gray);
 }
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
 .services {
-  padding: 5.625rem 2rem 4.875rem 2rem;
+  padding: 5.625rem 0 4.875rem 0;
 }
 .services__header {
   text-align: center;
@@ -53,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 50%);
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 50%);
 }
 .service-card__title {
   font-size: 1.25rem;
@@ -83,4 +88,61 @@ body {
 }
 .service-card:where([data-type='calculator']) {
   border-color: var(--blue);
+}
+@media screen and (min-width: 48rem) {
+  .services {
+    max-width: 69.375rem;
+    padding: 0;
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-cards {
+    grid-template-areas:
+      '. a .'
+      'b a d'
+      'b c d'
+      '. c .';
+    margin-top: 4rem;
+    gap: 1.875rem;
+  }
+  .service-card:where([data-type='supervisor']) {
+    grid-area: b;
+  }
+  .service-card:where([data-type='team-builder']) {
+    grid-area: a;
+  }
+  .service-card:where([data-type='karma']) {
+    grid-area: c;
+  }
+  .service-card:where([data-type='calculator']) {
+    grid-area: d;
+  }
+  .services__header {
+    max-width: 33.75rem;
+  }
+  .services__title {
+    font-size: 2.25rem;
+    letter-spacing: 0.0156rem;
+  }
+  .services__subtitle {
+    font-size: 2.25rem;
+    letter-spacing: 0.0156rem;
+  }
+  .services__description {
+    margin-top: 1.25rem;
+  }
+  .service-card {
+    max-width: 21.875rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .service-card__description {
+    margin-top: 0.625rem;
+  }
+  .service-card__image {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin-top: 2.5rem;
+  }
 }
