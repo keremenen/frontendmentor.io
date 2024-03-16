@@ -44,6 +44,7 @@ main {
   letter-spacing: 0.0063rem;
   line-height: 1.5625rem;
   margin-top: 1.0625rem;
+  color: var(--grayish-Blue);
 }
 .services-cards {
   list-style: none;
@@ -68,6 +69,7 @@ main {
 .service-card__description {
   font-size: 0.8125rem;
   line-height: 1.4375rem;
+  color: var(--grayish-Blue);
   letter-spacing: 0.0056rem;
   margin-top: 0.3125rem;
 }
