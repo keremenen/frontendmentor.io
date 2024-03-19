@@ -126,6 +126,9 @@ body {
   background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   box-shadow: 0 15px 20px 0 #c66e6e24;
 }
+.promo__submit:hover {
+  background: linear-gradient(90deg, hsl(0, 91%, 78%), hsl(0, 80%, 64%));
+}
 
 .error .promo__error-text {
   display: block;
