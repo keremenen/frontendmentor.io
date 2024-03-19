@@ -17,14 +17,14 @@ body {
 }
 
 .header {
-  height: 84px;
+  height: 5.25rem;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 .header__logo {
-  max-width: 100px;
+  max-width: 6.25rem;
 }
 
 .promo {
@@ -33,7 +33,7 @@ body {
 }
 
 .promo__image-container {
-  height: 250px;
+  height: 15.625rem;
   overflow: hidden;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .promo__text-container {
-  padding: 64px 32px 92px 32px;
+  padding: 4rem 2rem 5.75rem 2rem;
 }
 .promo__title {
   overflow: hidden;
@@ -68,14 +68,14 @@ body {
 }
 
 .promo__description {
-  margin-top: 16px;
+  margin-top: 1rem;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--desaturated-red);
   line-height: 1.375rem;
 }
 .promo__form {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 .promo__input-group {
   position: relative;
@@ -85,12 +85,12 @@ body {
 .promo__input {
   width: 100%;
   height: 100%;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   border: 0.0625rem solid var(--lighter-desaturated-red);
   color: var(--dark-grayish-red);
   outline: none;
-  padding-left: 24px;
-  font-size: 14px;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
 }
 
 .error .promo__input {
@@ -128,4 +128,7 @@ body {
   font-size: 0.8125rem;
   margin-left: 1.5rem;
   margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 48rem) {
 }
