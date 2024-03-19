@@ -99,6 +99,7 @@ body {
   border: 1px solid var(--lighter-desaturated-red);
   padding-left: 24px;
   font-size: 14px;
+  outline: none;
 }
 .promo__input::placeholder {
   color: var(--lighter-desaturated-red);
@@ -108,7 +109,7 @@ body {
   border: 2px solid var(--soft-red);
   background-image: url('../images/icon-error.svg');
   background-repeat: no-repeat;
-  background-position: right 25% bottom 50%;
+  background-position: right 70px bottom 50%;
 }
 .promo__submit {
   position: absolute;
@@ -136,4 +137,64 @@ body {
   font-size: 13px;
   margin-left: 24px;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 65rem) {
+  .promo {
+    height: 100vh;
+    grid-template-columns: 57.5% auto;
+    grid-template-rows: 162px 1fr;
+    grid-template-areas:
+      'icon hero'
+      'info hero';
+  }
+  .header {
+    padding: 0 165px;
+  }
+  .header__logo {
+    max-width: 158px;
+  }
+  .promo__form {
+    margin-top: 0;
+  }
+  .promo__text-container {
+    padding: 0;
+    padding: 0 165px;
+    max-width: 775px;
+    display: grid;
+    align-content: center;
+  }
+  .promo__title,
+  .promo__description {
+    text-align: left;
+  }
+  .promo__title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 17px;
+  }
+  .promo__title span {
+    line-height: 71px;
+  }
+  .promo__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .promo__input-group {
+    height: 56px;
+    margin-top: 41px;
+  }
+  .promo__input {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+  .promo__submit {
+    width: 100px;
+  }
+  .error .promo__input {
+    border: 2px solid var(--soft-red);
+    background-image: url('../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right 110px bottom 50%;
+  }
 }
