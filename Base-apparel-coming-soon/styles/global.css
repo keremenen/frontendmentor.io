@@ -84,7 +84,7 @@ body {
   margin-top: 1rem;
 }
 
-.promo__form {
+#promo__form {
   margin-top: 32px;
 }
 
@@ -157,7 +157,7 @@ body {
   .header__logo {
     max-width: 158px;
   }
-  .promo__form {
+  #promo__form {
     margin-top: 0;
   }
   .promo__text-container {
