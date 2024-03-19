@@ -31,6 +31,47 @@
       href="./styles/global.css" />
   </head>
   <body>
-    <p>hello world</p>
+    <main>
+      <header class="header">
+        <img
+          src="./images/logo.svg"
+          class="header__logo"
+          alt="Base Apparel logo" />
+      </header>
+      <section class="promo">
+        <div class="promo__text-container">
+          <h1 class="promo__title">We're <span>coming soon</span></h1>
+          <p class="promo__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="promo__form">
+            <div class="promo__input-group">
+              <input
+                type="email"
+                class="promo__input"
+                placeholder="Email address"
+                required />
+              <button
+                type="submit"
+                class="promo__submit">
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="promo__image-container">
+          <picture>
+            <source
+              srcset="./images/hero-desktop.jpg"
+              media="(min-width: 48rem)" />
+            <img
+              src="./images/hero-mobile.jpg"
+              alt="A woman in an orange shirt with a tender look" />
+          </picture>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
