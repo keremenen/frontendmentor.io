@@ -1,0 +1,12 @@
+@import url(./reset.css);
+
+:root {
+  --cyan: #2ab2af;
+  --bright-yellow: #c0df34;
+  --light-gray: #e5eff5;
+  --grayish-blue: #98a6bd;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
