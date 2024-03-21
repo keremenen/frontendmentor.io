@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Karla', sans-serif;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-gray);
 }
 
 main {
@@ -26,6 +26,7 @@ main {
   grid-template-columns: 1fr;
   border-radius: 0.3125rem;
   overflow: hidden;
+  box-shadow: 0 15px 30px 0 #0051ab15;
 }
 
 .community__header {
