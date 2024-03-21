@@ -2,11 +2,120 @@
 
 :root {
   --cyan: #2ab2af;
+  --lighter-cyan: #4bbfbc;
   --bright-yellow: #c0df34;
   --light-gray: #e5eff5;
   --grayish-blue: #98a6bd;
+  --white: #fff;
 }
 
 body {
   font-family: 'Karla', sans-serif;
+  background-color: var(--grayish-blue);
+}
+
+main {
+  padding: 4.5rem 2rem 3.875rem;
+}
+
+.community {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.community__header {
+  padding: 1.75rem 1.5rem 2rem;
+  background-color: var(--white);
+}
+.community__title {
+  font-weight: 700;
+  color: var(--cyan);
+  font-size: 1.25rem;
+  letter-spacing: -0.0156rem;
+}
+.community__subtitle {
+  font-weight: 700;
+  color: var(--bright-yellow);
+  font-size: 0.9375rem;
+  letter-spacing: -0.0119rem;
+  line-height: 1.25rem;
+  margin-top: 1.5rem;
+  white-space: normal;
+}
+.community__description {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  font-size: 0.875rem;
+  letter-spacing: -0.0106rem;
+  line-height: 1.625rem;
+  margin-top: 1.125rem;
+}
+.community__subscription {
+  padding: 1.5rem;
+  background-color: var(--cyan);
+}
+.community__price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.0138rem;
+}
+.community__cost {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.025rem;
+  gap: 0.75rem;
+  margin-top: 0.8125rem;
+}
+.community__cost .community__per-month {
+  opacity: 0.5;
+  font-size: 1rem;
+  letter-spacing: -0.0125rem;
+  font-weight: 400;
+}
+
+.community__access {
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: -0.0125rem;
+  font-weight: 400;
+}
+.community__sign-up-button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  letter-spacing: -0.0125rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.625rem 0.625rem 0 #00000010;
+  margin-top: 1.625rem;
+}
+.community__why-us {
+  padding: 1.5rem;
+  background-color: var(--lighter-cyan);
+}
+.community__why-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0138rem;
+  color: var(--white);
+}
+.community__features {
+  color: var(--white);
+  margin-top: 1.25rem;
+  list-style: none;
+  opacity: 0.75;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: -0.0106rem;
 }
