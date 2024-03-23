@@ -109,7 +109,7 @@ body {
   .faq {
     border-radius: 1rem;
     padding: 2.5rem;
-    max-width: 37.5rem;
+    width: 37.5rem;
   }
   .faq__header {
     font-size: 3.5rem;
