@@ -1,0 +1,12 @@
+@import url(./reset.css);
+
+:root {
+  --white: #ffffff;
+  --light-pink: #f9f0ff;
+  --grayish-purple: #8c6991;
+  --dark-purple: #2f1533;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
