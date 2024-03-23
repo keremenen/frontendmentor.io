@@ -16,6 +16,9 @@ body {
   background-position: 50% 0%;
   background-size: 100%;
   padding-top: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .faq {
@@ -23,6 +26,7 @@ body {
   background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: 0 32px 56px 0 #50007610;
+  max-width: 37.5rem;
 }
 
 .faq__header {
@@ -95,4 +99,36 @@ body {
 }
 .faq__question[aria-expanded='true'] + .faq__answer {
   display: block;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding-top: 10.4375rem;
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+  }
+  .faq {
+    border-radius: 1rem;
+    padding: 2.5rem;
+    max-width: 37.5rem;
+  }
+  .faq__header {
+    font-size: 3.5rem;
+    padding-left: 4rem;
+    margin-bottom: 2.625rem;
+  }
+  .faq__header::before {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .faq__question {
+    font-size: 1.125rem;
+  }
+  .faq__answer {
+    font-size: 1rem;
+    margin-top: 28px;
+  }
+  .faq__single-item:not(:last-child) {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+  }
 }
