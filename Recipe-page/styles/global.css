@@ -186,7 +186,7 @@ body {
     justify-content: center;
   }
   main {
-    margin-top: 7.6875rem;
+    padding: 7.6875rem 0;
   }
   .recipe {
     width: 46rem;
