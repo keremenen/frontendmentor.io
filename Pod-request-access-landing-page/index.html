@@ -29,7 +29,69 @@
       rel="stylesheet"
       href="./styles/global.css" />
   </head>
+
   <body>
-    <p>hello world</p>
+    <header class="header">
+      <nav class="navigation">
+        <img
+          src="./assets/desktop/logo.svg"
+          alt="Pod logo"
+          class="navigation__logo" />
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <h1 class="hero__title">
+          Publish Your Podcasts <span>Everywhere.</span>
+        </h1>
+        <p class="hero__description">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <form class="form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="form__input" />
+          <button
+            type="submit"
+            class="form__button">
+            Request Access
+          </button>
+        </form>
+      </section>
+
+      <section class="platforms">
+        <ul class="platforms__list">
+          <li class="platforms__item">
+            <img
+              src="spotify.png"
+              alt="Spotify"
+              class="platforms__icon" />
+          </li>
+          <li class="platforms__item">
+            <img
+              src="apple-podcast.png"
+              alt="Apple Podcast"
+              class="platforms__icon" />
+          </li>
+          <li class="platforms__item">
+            <img
+              src="google-podcasts.png"
+              alt="Google Podcasts"
+              class="platforms__icon" />
+          </li>
+          <li class="platforms__item">
+            <img
+              src="pocket-casts.png"
+              alt="Pocket Casts"
+              class="platforms__icon" />
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
