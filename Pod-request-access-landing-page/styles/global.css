@@ -127,6 +127,10 @@ body {
 .error .form__error-message {
   visibility: visible;
 }
+.success .form__error-message {
+  color: #54e6af;
+  visibility: visible;
+}
 
 @media screen and (min-width: 48rem) {
   body {
