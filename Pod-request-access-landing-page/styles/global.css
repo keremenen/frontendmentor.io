@@ -116,7 +116,7 @@ body {
   body {
     background-image: url('../assets/tablet/image-host.jpg');
     background-repeat: no-repeat;
-    background-size: auto 91%;
+    background-size: auto 75%;
     background-color: var(--dark-blue);
     background-blend-mode: normal;
     padding: 0 38px;
@@ -137,6 +137,16 @@ body {
     max-width: 635px;
     padding-top: 94px;
     gap: 0;
+  }
+
+  .hero::after {
+    content: '';
+    background-image: url('../assets/desktop/bg-pattern-dots.svg');
+    width: 232px;
+    height: 104px;
+    order: 2;
+    margin-top: 153px;
+    margin-left: -8px;
   }
   .hero__title {
     font-size: 3rem;
@@ -188,4 +198,7 @@ body {
     width: 129px;
     height: 26px;
   }
+}
+
+@media screen and (min-width: 62rem) {
 }
