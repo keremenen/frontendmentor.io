@@ -162,6 +162,7 @@ body {
   }
   .platforms {
     order: 1;
+    max-width: 536px;
   }
   .form {
     margin-top: 2.5rem;
@@ -181,7 +182,7 @@ body {
   .platforms__list {
     margin-top: 64px;
     height: 29px;
-    margin-right: 99px;
+
     padding: 0;
   }
   .platforms__item--spotify {
@@ -200,5 +201,34 @@ body {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 0 165px;
+    background-image: url('../assets/desktop/image-host.jpg');
+    background-size: auto 71%;
+    background-position: right 52%;
+  }
+  .main-content {
+    margin-top: 0;
+    max-width: 1440px;
+  }
+  .header {
+    padding: 102px 0;
+  }
+  .hero {
+    max-width: 723px;
+    padding-top: 89px;
+  }
+  .hero::after {
+    position: absolute;
+    right: 0;
+    bottom: 74px;
+  }
+  .hero__title {
+    font-size: 3.25rem;
+    line-height: 62px;
+  }
+  .hero__description {
+    margin-top: 24px;
+  }
 }
