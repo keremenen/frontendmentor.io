@@ -96,7 +96,7 @@ body {
   font-size: 14px;
   line-height: 28px;
   color: #ffffff50;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   padding-left: 2rem;
   border: none;
   font-weight: 700;
@@ -110,4 +110,82 @@ body {
   font-size: 0.875rem;
   border-radius: 1.75rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    background-image: url('../assets/tablet/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 91%;
+    background-color: var(--dark-blue);
+    background-blend-mode: normal;
+    padding: 0 38px;
+    background-position: right top;
+  }
+  .header {
+    margin-top: 0;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: start;
+  }
+  .main-content {
+    margin-top: 102px;
+    max-width: 1140px;
+  }
+  .hero {
+    background-color: var(--dark-blue);
+    max-width: 635px;
+    padding-top: 94px;
+    gap: 0;
+  }
+  .hero__title {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 3.5rem;
+  }
+  .hero__description {
+    font-size: 18px;
+    text-align: left;
+    line-height: 28px;
+    max-width: 445px;
+    margin-top: 30px;
+  }
+  .platforms {
+    order: 1;
+  }
+  .form {
+    margin-top: 2.5rem;
+    position: relative;
+    max-width: 427px;
+  }
+  .form__input {
+    height: 56px;
+  }
+  .form__button {
+    height: 46px;
+    width: 162px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .platforms__list {
+    margin-top: 64px;
+    height: 29px;
+    margin-right: 99px;
+    padding: 0;
+  }
+  .platforms__item--spotify {
+    width: 96px;
+  }
+  .platforms__item--apple-music {
+    width: 78px;
+  }
+  .platforms__item--google-podcasts {
+    width: 125px;
+    height: 18px;
+  }
+  .platforms__item--pocket-casts {
+    width: 129px;
+    height: 26px;
+  }
 }
