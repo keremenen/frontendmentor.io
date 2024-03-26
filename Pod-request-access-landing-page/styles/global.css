@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
   --green: #54e6af;
+  --light-green: #b3ffe2;
   --blue: #2c344b;
   --dark-blue: #121725;
   --light-blue: #5a668a;
@@ -110,6 +111,11 @@ body {
   font-size: 0.875rem;
   border-radius: 1.75rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.form__button:hover,
+.form__button:focus {
+  background-color: var(--light-green);
 }
 
 @media screen and (min-width: 48rem) {
