@@ -8,6 +8,7 @@
   --dark-blue: #121725;
   --light-blue: #5a668a;
   --gray: #c2cbe5;
+  --red: #fb3e3e;
 }
 
 body {
@@ -117,6 +118,15 @@ body {
 .form__button:focus {
   background-color: var(--light-green);
 }
+.form__error-message {
+  font-size: 12px;
+  visibility: hidden;
+  font-weight: 700;
+  color: var(--red);
+}
+.error .form__error-message {
+  visibility: visible;
+}
 
 @media screen and (min-width: 48rem) {
   body {
@@ -175,6 +185,10 @@ body {
     position: relative;
     max-width: 427px;
   }
+  .form__error-message {
+    align-self: start;
+    padding-left: 2rem;
+  }
   .form__input {
     height: 56px;
   }
@@ -186,9 +200,8 @@ body {
     right: 5px;
   }
   .platforms__list {
-    margin-top: 64px;
+    margin-top: 30px;
     height: 29px;
-
     padding: 0;
   }
   .platforms__item--spotify {
