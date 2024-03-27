@@ -15,21 +15,16 @@
     <title>Frontend Mentor | Workit landing page</title>
 
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet" />
-      <link rel="stylesheet" href="./styles/global.css">
+      rel="stylesheet"
+      href="./styles/global.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__logo-wrapper">
-        <img class="header__logo" src="./assets/images/logo-light.svg" alt="Workit logo">
+        <img
+          class="header__logo"
+          src="./assets/images/logo-light.svg"
+          alt="Workit logo" />
       </div>
       <nav class="header__nav">
         <a
@@ -43,11 +38,24 @@
     <main class="main">
       <section class="hero">
         <h1 class="hero__title">Data <mark>tailored</mark> to your needs.</h1>
-        <button
-          href="#"
-          class="hero__cta"></button>
-          Learn more
-        </button>
+        <button class="hero__cta">Learn more</button>
+        <div class="hero__image-wrapper">
+          <img
+            class="hero__image"
+            src="./assets/images/image-hero.webp"
+            alt="Smartphone with an open app on screen." />
+        </div>
+        <div class="hero__wave">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"></path>
+          </svg>
+        </div>
       </section>
 
       <section class="features">
@@ -95,15 +103,18 @@
           </p>
           <button
             href="#"
-            class="test-invitation__cta"
-            >Apply for access</button>
+            class="test-invitation__cta">
+            Apply for access
+          </button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__logo-wrapper">
-        <img src="./assets/images/logo-dark.svg" alt="Dark workit logo">
+        <img
+          src="./assets/images/logo-dark.svg"
+          alt="Dark workit logo" />
       </div>
       <div class="footer__social-media">
         <a
