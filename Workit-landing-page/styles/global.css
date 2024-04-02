@@ -176,5 +176,39 @@ body {
 }
 
 .test-invitation {
-  padding: 0 1rem;
+  padding: 67px 1rem 0;
+  text-align: center;
+}
+
+.test-invitation__content {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 32px 31px;
+  position: relative;
+  margin-top: -53px;
+}
+
+.test-invitation__title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.test-invitation__profile-wrapper {
+  padding: 0 31px;
+}
+.test-invitation__text {
+  font-size: 1rem;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 16px 0 24px;
+}
+.test-invitation__cta {
+  padding: 15px 24px;
+  color: var(--navy);
+  background-color: var(--lime);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+  border: none;
 }
