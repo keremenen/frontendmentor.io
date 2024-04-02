@@ -159,6 +159,7 @@ body {
   font-size: 28px;
   color: var(--navy);
   margin: 27px 0 18px;
+  text-align: center;
 }
 
 .feature__description {
@@ -231,3 +232,5 @@ body {
 .footer__link {
   cursor: pointer;
 }
+
+/* TABLETY */
