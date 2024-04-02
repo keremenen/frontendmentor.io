@@ -212,3 +212,22 @@ body {
   letter-spacing: -0.16px;
   border: none;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  padding: 74px 0 63px;
+}
+
+.footer__social-media {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  align-items: center;
+}
+.footer__link {
+  cursor: pointer;
+}
