@@ -57,13 +57,9 @@ body {
 .hero {
   padding: 0 1rem;
   background-color: var(--navy);
-  padding-top: 32px;
-  padding-bottom: 120px;
-  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
   position: relative;
 }
 
@@ -74,6 +70,7 @@ body {
   font-size: 50px;
   line-height: 50px;
   white-space: normal;
+  padding: 2rem 0;
 }
 .hero__title mark {
   background-color: transparent;
@@ -90,8 +87,8 @@ body {
   border-bottom: 3px solid var(--lime);
 }
 .hero__cta {
-  width: 133px;
-  height: 55px;
+  margin-top: 8px;
+  padding: 15px 24px;
   color: var(--navy);
   background-color: var(--lime);
   font-size: 1rem;
@@ -101,50 +98,61 @@ body {
 }
 
 .hero__image-wrapper {
-  position: absolute;
-  width: 320px;
-  bottom: -128px;
-  height: 184px;
-  margin-top: 24px;
-  margin-left: 12px;
+  padding-left: 19px;
+  padding-right: 3px;
+  transform: translateY(65px);
+  z-index: 2;
 }
 .hero__image {
   width: 100%;
 }
+
 .hero__wave {
   position: absolute;
-  bottom: -70px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: -1;
-}
-
-.hero__wave svg {
-  position: relative;
-  display: block;
-  width: calc(287% + 1.3px);
-  height: 70px;
-}
-
-.hero__wave .shape-fill {
-  fill: #24053e;
+  bottom: 0;
+  z-index: 1;
+  background: var(--gray);
 }
 
 .features {
-  padding: 72px 16px;
+  background: var(--gray);
+  position: relative;
+  padding: 128px 0 105px;
+}
+.features__content {
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+.features__list {
+  counter-reset: feature-counter;
+  display: flex;
+  flex-direction: column;
+}
 .feature {
   display: flex;
+  counter-increment: feature-counter;
   flex-direction: column;
   align-items: center;
 }
+.feature::before {
+  content: counter(feature-counter);
+  font-size: var(--text-lg);
+  font-family: var(--font-header);
+  border: 1px solid var(--davy-grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+  min-height: 48px;
+  min-width: 48px;
+}
 
-.feature__number {
+/* .feature__number {
   font-family: 'Fraunces', serif;
   color: var(--navy);
   font-size: 20px;
@@ -168,4 +176,10 @@ body {
   color: var(--navy);
   line-height: 28px;
   text-align: center;
+} */
+.features__wave {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: var(--white);
 }
