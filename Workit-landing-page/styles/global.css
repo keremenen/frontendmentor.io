@@ -255,9 +255,6 @@ body {
     padding: 0;
     transform: translateY(55px);
   }
-  .hero__wave {
-    height: 230px;
-  }
 
   .features {
     padding: 115px 0 150px;
@@ -293,8 +290,5 @@ body {
   .feature__description {
     grid-area: c;
     text-align: left;
-  }
-  .features__wave {
-    height: 140px;
   }
 }
