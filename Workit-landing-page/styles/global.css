@@ -115,15 +115,16 @@ body {
 
 .hero__wave {
   position: absolute;
-  bottom: 0;
+  height: 44px;
+  bottom: 0px;
   z-index: 1;
-  background: var(--gray);
+  background-color: var(--gray);
 }
 
 .features {
   background: var(--gray);
   position: relative;
-  padding: 7.9375rem 0 6.5625rem;
+  padding: 127px 0 105px;
 }
 .features__content {
   padding: 0 1rem;
@@ -177,9 +178,10 @@ body {
 
 .features__wave {
   position: absolute;
-  bottom: 0;
+  height: 44px;
+  bottom: 0px;
   z-index: 1;
-  background: var(--white);
+  background-color: var(--white);
 }
 
 .test-invitation {
