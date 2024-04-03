@@ -247,6 +247,9 @@ body {
   .header {
     padding: 36px 40px;
   }
+  .hero {
+    max-height: 454px;
+  }
   .hero__title {
     font-size: 60px;
     line-height: 60px;
@@ -265,7 +268,7 @@ body {
   }
 
   .features {
-    padding: 115px 0 150px;
+    padding: 195px 0 190px;
   }
   .features__content {
     max-width: 573px;
@@ -299,6 +302,9 @@ body {
     grid-area: c;
     text-align: left;
   }
+  .test-invitation {
+    padding: 15px 0 0 0;
+  }
 
   .test-invitation__content {
     margin: 0 auto;
@@ -308,7 +314,9 @@ body {
     max-height: 526px;
     position: relative;
   }
-
+  .test-invitation__description {
+    margin: 29px 0 1.5rem;
+  }
   .test-invitation__profile-wrapper {
     width: 281px;
     height: 281px;
@@ -320,14 +328,11 @@ body {
     width: 514px;
     right: 0;
     bottom: 0;
+    text-align: left;
   }
 
   .test-invitation__title {
     font-size: 48px;
     text-align: left;
-  }
-  .test-invitation__text {
-    text-align: left;
-    margin: 29px 0 24px;
   }
 }
