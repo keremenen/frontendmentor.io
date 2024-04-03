@@ -62,6 +62,12 @@ body {
   align-items: center;
   position: relative;
 }
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 
 .hero__title {
   font-family: 'Fraunces', serif;
@@ -181,7 +187,7 @@ body {
   text-align: center;
 }
 
-.test-invitation__content {
+.test-invitation__text {
   background-color: var(--navy);
   color: var(--white);
   padding: 2rem 1.9375rem;
@@ -198,7 +204,7 @@ body {
 .test-invitation__profile-wrapper {
   padding: 0 1.9375rem;
 }
-.test-invitation__text {
+.test-invitation__description {
   font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 400;
@@ -233,7 +239,7 @@ body {
   cursor: pointer;
 }
 
-/* TABLETY */
+/* TABLETS */
 
 @media screen and (min-width: 48rem) {
   .header {
@@ -290,5 +296,36 @@ body {
   .feature__description {
     grid-area: c;
     text-align: left;
+  }
+
+  .test-invitation__content {
+    margin: 0 auto;
+    width: 689px;
+    max-width: 689px;
+    height: 526px;
+    max-height: 526px;
+    position: relative;
+  }
+
+  .test-invitation__profile-wrapper {
+    width: 281px;
+    height: 281px;
+    padding: 0;
+  }
+  .test-invitation__text {
+    padding: 52px 56px 56px;
+    position: absolute;
+    width: 514px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .test-invitation__title {
+    font-size: 48px;
+    text-align: left;
+  }
+  .test-invitation__text {
+    text-align: left;
+    margin: 29px 0 24px;
   }
 }
